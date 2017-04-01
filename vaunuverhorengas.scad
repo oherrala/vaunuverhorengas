@@ -11,7 +11,7 @@ diameter=65;
  *
  * https://github.com/openscad/openscad/issues/237#issuecomment-287891242
  */
-$fa = 4;
+$fa = 5;
 $fs = 0.5;
 
 // One knob (a sphere)
@@ -51,7 +51,7 @@ difference() {
     translate([0, 0, thickness]) {
         ring();
     }
-    translate([0, 0, -thickness/2.1]) {
+    translate([0, 0, -thickness/2.0]) {
         cube([3*diameter, 3*diameter, thickness], center=true);
     }
 }
